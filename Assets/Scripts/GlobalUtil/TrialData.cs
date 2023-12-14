@@ -175,8 +175,9 @@ public class TrialData
     /// </summary>
     public void SaveToRegistCodeFile()
     {
-        RegistCodeGenerator generator = new RegistCodeGenerator();
-        string registCode = generator.GenerateRegistrationCode(this);
+        //RegistCodeGenerator generator = new RegistCodeGenerator();
+        //string registCode = generator.GenerateRegistrationCode(this);
+        string registCode = "";
 
         // ディレクトリパスの取得 & ファイルパス接頭辞の生成
         string filePath = LogFileUtil.GetRegistCodeDirPath(GameMode);
